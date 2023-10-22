@@ -21,4 +21,4 @@ jobs:
           pr_title: "Test sync action"
           pr_message: "This is test."
           retries: 0
-
+          token: ${{ secrets.FABIANPATRAS_FORK_ACCESS_TOKEN }}
