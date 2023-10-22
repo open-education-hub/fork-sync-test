@@ -1,0 +1,24 @@
+name: Sync Fork
+
+on:
+  # schedule:
+    # disable this flow on the fork
+    # - cron: '*/10 * * * *' # every 10 minutes
+  workflow_dispatch: # on button click
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: tgymnich/fork-sync@v1.9
+        with:
+          owner: fabian
+          repo: fork-sync-flow
+          base: main
+          head: main
+          auto_merge: false
+          auto_approve: false
+          pr_title: "Test sync action"
+          pr_message: "This is test."
+          retries: 0
+
