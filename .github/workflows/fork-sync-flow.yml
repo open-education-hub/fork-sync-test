@@ -13,7 +13,7 @@ jobs:
       - uses: tgymnich/fork-sync@v1.9
         with:
           owner: fabian
-          repo: fork-sync-flow
+          repo: fork-sync-test
           base: main
           head: main
           auto_merge: false
