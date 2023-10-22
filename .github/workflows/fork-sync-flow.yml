@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.9
         with:
-          owner: fabian
+          owner: fabianpatras
           repo: fork-sync-test
           base: main
           head: main
